@@ -1,11 +1,11 @@
 const activities = [
   { name: "Drawing and Coloring", type: "indoor", age: "preschool", cost: "free" },
-  { name: "Visit the Zoo", type: "outdoor", age: "school-age", cost: "paid" },
+  { name: "Visit the Zoo", type: "outdoor", age: "school-age", cost: "paid" },  
   { name: "Building Blocks", type: "indoor", age: "toddler", cost: "free" },
   { name: "Scavenger Hunt", type: "outdoor", age: "school-age", cost: "free" },
   { name: "Story Time", type: "indoor", age: "toddler", cost: "free" },
-  { name: "Visit the National Gallery", type: "indoor", age: "school-age", cost: "free" }
-  
+  { name: "Visit the National Gallery", type: "indoor", age: "school-age", cost: "free" },
+  { name: "Watch a Play", type: "indoor", age: "school-age", cost: "paid" }
   // Add more activities here
 ];
 
@@ -48,3 +48,9 @@ document.getElementById('generate-activity').addEventListener('click', getRandom
 
 // Initial display of activities
 displayActivities({ age: 'all', type: 'all' });
+
+// Create a new link element
+let link = document.createElement("a");
+link.href = "https://example.com";
+link.innerText = "Visit Example Site";
+document.body.appendChild(link);
