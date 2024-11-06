@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kids Activity Recommendations</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Fun Activities for Kids</h1>
+    <p>Discover great activities to do with children of all ages!</p>
+  </header>
+
+  <section id="filter-section">
+    <h2>Filter Activities</h2>
+    <label for="age-group">Age Group:</label>
+    <select id="age-group">
+      <option value="all">All Ages</option>
+      <option value="toddler">Toddler (1-3)</option>
+      <option value="preschool">Preschool (4-5)</option>
+      <option value="school-age">School Age (6-12)</option>
+    </select>
+
+    <label for="activity-type">Activity Type:</label>
+    <select id="activity-type">
+      <option value="all">All Types</option>
+      <option value="indoor">Indoor</option>
+      <option value="outdoor">Outdoor</option>
+      <option value="educational">Educational</option>
+      <option value="creative">Creative</option>
+    </select>
+
+    <button id="generate-activity">Get a Random Activity</button>
+  </section>
+
+  <section id="activities-section">
+    <h2>Recommended Activities</h2>
+    <div id="activity-list">
+      <!-- JavaScript will populate this area with activity recommendations -->
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
