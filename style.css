@@ -6,19 +6,19 @@
   }
   
   body {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow';
-    background-color:pink;
-    color: #333;
-    padding: 20px;
+    font-family: 'franklin gothic book';
+    background-color:peachpuff;
+    color: black;
+    padding: 25px;
   }
   
   header {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
   }
   
   #filter-section, #activities-section {
-    margin: 20px 0;
+    margin: 25px 0;
   }
   
   #filter-section select, #generate-activity {
