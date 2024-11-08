@@ -45,12 +45,12 @@ document.getElementById('activity-type').addEventListener('change', (e) => {
 });
 
 document.getElementById('generate-activity').addEventListener('click', getRandomActivity);
-
-// Initial display of activities
-displayActivities({ age: 'all', type: 'all' });
-
 // Create a new link element
 let link = document.createElement("a");
 link.href = "https://example.com";
 link.innerText = "Visit Example Site";
 document.body.appendChild(link);
+
+// Initial display of activities
+displayActivities({ age: 'all', type: 'all' });
+
