@@ -5,7 +5,10 @@ const activities = [
   { name: "Scavenger Hunt", type: "outdoor", age: "school-age", cost: "free" },
   { name: "Story Time", type: "indoor", age: "toddler", cost: "free" },
   { name: "Visit the National Gallery", type: "indoor", age: "school-age", cost: "free", link: "https://www.nationalgallery.sg/gallerykids/" },
-  { name: "Watch a Play", type: "indoor", age: "school-age", cost: "paid" }
+  { name: "Watch a Play", type: "indoor", age: "school-age", cost: "paid" },
+  { name: "Visit a Park", type: "outdoor", age: "school-age", cost: "paid" }
+ 
+
   // Add more activities here
 ];
 
