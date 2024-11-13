@@ -1,41 +1,40 @@
 /* Reset some default styling */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    font-family: 'franklin gothic book';
-    background-color:peachpuff;
-    color: black;
-    padding: 25px;
-  }
-  
-  header {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  #filter-section, #activities-section {
-    margin: 20px 0;
-  }
-  
-  #filter-section select, #generate-activity {
-    margin: 10px;
-  }
-  
-  #activity-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-  
-  .activity-item {
-    border: 1px solid #ddd;
-    padding: 15px;
-    border-radius: 5px;
-    width: 100%;
-    background: #fff;
-  }
-  
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+  background-color:peachpuff;
+  color: black;
+  padding: 25px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#filter-section, #activities-section {
+  margin: 20px 0;
+}
+
+#filter-section select, #generate-activity {
+  margin: 10px;
+}
+
+#activity-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.activity-item {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 5px;
+  width: 100%;
+  background: #fff;
+}
