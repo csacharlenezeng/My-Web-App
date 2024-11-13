@@ -74,5 +74,5 @@ document.getElementById('activity-cost').addEventListener('change', (e) => {
 document.getElementById('generate-activity').addEventListener('click', getRandomActivity);
 
 // Initial display of all activities
-displayActivities({ age: 'all', type: 'all' });
+displayActivities({ age: 'all', type: 'all', cost: 'all' });
 
