@@ -5,7 +5,7 @@ const activities = [
   { name: "Story Time", type: "indoor", age: "toddler", cost: "free", link: "https://www.storyberries.com/" },
   { name: "Visit the National Gallery", type: "indoor", age: "school-age", cost: "free", link: "https://www.nationalgallery.sg/gallerykids/" },
   { name: "Watch a Play", type: "indoor", age: "school-age", cost: "paid", link: "https://www.srt.com.sg/children" },
-  { name: "Visit a Park", type: "outdoor", age: "school-age", cost: "paid", link: "https://beta.nparks.gov.sg/visit/parks/park-detail/fort-canning-park" },
+  { name: "Visit a Park", type: "outdoor", age: "school-age", cost: "free", link: "https://beta.nparks.gov.sg/visit/parks/park-detail/fort-canning-park" },
   { name: "Go to an Outdoor Playground", type: "outdoor", age: "school-age", cost: "free", link: "https://www.gardensbythebay.com.sg/en/things-to-do/attractions/far-east-organization-childrens-garden.html" },
   { name: "Go to the Children's Museum", type: "indoor", age:"preschool", cost: "free", link: "https://www.nhb.gov.sg/childrensmuseum" }
 
