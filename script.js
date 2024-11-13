@@ -1,7 +1,6 @@
 const activities = [
   { name: "Drawing and Coloring", type: "indoor", age: "preschool", cost: "free", link: "https://www.roomrecess.com/pages/ColoringPagesForKids.html" },
   { name: "Visit the Zoo", type: "outdoor", age: "school-age", cost: "paid", link: "https://www.mandai.com/en/singapore-zoo.html" },  
-  { name: "Building Blocks", type: "indoor", age: "toddler", cost: "free" },
   { name: "Scavenger Hunt", type: "outdoor", age: "school-age", cost: "free", link: "https://www.goodhousekeeping.com/life/parenting/g32050844/scavenger-hunt-ideas-for-kids/" },
   { name: "Story Time", type: "indoor", age: "toddler", cost: "free", link: "https://www.storyberries.com/" },
   { name: "Visit the National Gallery", type: "indoor", age: "school-age", cost: "free", link: "https://www.nationalgallery.sg/gallerykids/" },
@@ -19,7 +18,8 @@ function displayActivities(filter = {}) {
   // Filter activities based on selected criteria
   const filteredActivities = activities.filter(activity => {
     return (filter.age === 'all' || activity.age === filter.age) &&
-           (filter.type === 'all' || activity.type === filter.type);
+           (filter.type === 'all' || activity.type === filter.type) &&
+           (filter.cost === 'all' || activity.cost === filter.cost);
   });
 
   // Loop through filtered activities and display them
@@ -53,13 +53,22 @@ function getRandomActivity() {
 document.getElementById('age-group').addEventListener('change', (e) => {
   const ageGroup = e.target.value;
   const activityType = document.getElementById('activity-type').value;
-  displayActivities({ age: ageGroup, type: activityType });
+  const activityCost = document.getElementById('activity-cost').value;
+  displayActivities({ age: ageGroup, type: activityType, cost: activityCost });
 });
 
 document.getElementById('activity-type').addEventListener('change', (e) => {
   const ageGroup = document.getElementById('age-group').value;
   const activityType = e.target.value;
-  displayActivities({ age: ageGroup, type: activityType });
+  const activityCost = document.getElementById('activity-cost').value;
+  displayActivities({ age: ageGroup, type: activityType, cost: activityCost });
+});
+
+document.getElementById('activity-cost').addEventListener('change', (e) => {
+  const ageGroup = document.getElementById('age-group').value;
+  const activityType = document.getElementById('activity-type').value;
+  const activityCost = e.target.value;
+  displayActivities({ age: ageGroup, type: activityType, cost: activityCost });
 });
 
 document.getElementById('generate-activity').addEventListener('click', getRandomActivity);
