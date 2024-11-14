@@ -38,3 +38,14 @@ header {
   width: 100%;
   background: #fff;
 }
+footer {
+  padding: 15px;
+  text-align: center;
+  font-size: 0.9em;
+  color: #555;
+  margin-top: 20px;
+}
+
+.disclaimer {
+  margin: 0;
+}
