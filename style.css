@@ -1,15 +1,15 @@
 /* Reset some default styling */
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
 }
 
 body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
   background-color:peachpuff;
   color: black;
-  padding: 25px;
+  padding: 20px;
 }
 
 header {
@@ -18,7 +18,7 @@ header {
 }
 
 #filter-section, #activities-section {
-  margin: 20px 0;
+  margin: 20px;
 }
 
 #filter-section select, #generate-activity {
