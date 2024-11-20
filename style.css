@@ -18,11 +18,15 @@ header {
 }
 
 #filter-section, #activities-section {
-  margin: 20px;
+  margin: 10px;
 }
 
 #filter-section select, #generate-activity {
-  margin: 10px;
+  width: 200px;
+  height: 30px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 16px;
+  margin: 5px;
 }
 
 #activity-list {
